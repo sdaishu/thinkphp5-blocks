@@ -1,0 +1,45 @@
+{
+  "name": "thinkphp5-block",
+  "description": " base on ThinkPhp5 framework",
+  "type": "project",
+  "keywords": [
+    "framework",
+    "thinkPhp",
+    "ORM"
+  ],
+  "license": "mit",
+  "authors": [
+    {
+      "name": "DongMing.Cui",
+      "email": "xcode4@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "topthink/framework": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "application",
+      "extend\\": "extend",
+      "database\\": "database"
+    }
+  },
+  "scripts": {
+    "pre-install-cmd": [
+      "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  },
+  "extra": {
+    "think-path": "thinkphp"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
