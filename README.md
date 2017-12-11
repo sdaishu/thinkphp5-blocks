@@ -1,11 +1,9 @@
 ##项目初始化
 第一步:  
-git clone git@121.43.120.239:pgy-girl  
-第二步:  
 php composer.phar install  
-第三步:  
+第二步:  
 访问 http://localhost/ 看是否有信息  
-第四步:  
+第三步:  
 新建自己拼音分支，然后push到远程
   
 ##常用命令  
