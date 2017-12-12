@@ -48,11 +48,11 @@ route 代表整个应用的路由
 框架开发规则 参考 README.md 文件
 
 ##表结构命名  
-前缀以项目 miyin_  
+前缀以项目 db_  
 模块前缀 user_  
 字段小写 多个单词用_进行分割
 
-比如 miyin_backend_user 后台用户  
+比如 db_backend_user 后台用户  
 ·
 普通表里面包含常用的几个字段  
 created_at 创建时间  
