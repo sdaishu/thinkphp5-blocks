@@ -15,15 +15,22 @@ use think\Request;
 class BaseApi extends BaseController
 {
     protected $uuid;
+    protected $request;
 
+    /**
+     * BaseApi constructor.
+     * @param Request|null $request
+     */
     public function __construct(Request $request = null)
     {
-        $this->request = $request;
-        $this->user = new UserLogic();
+        parent::__construct($request);
 
+        $this->request = $request;
+
+        $this->user = new UserLogic();
         $params = $this->request->param();
         $this->uuid = $this->user->auth($params);
-
     }
+
 
 }

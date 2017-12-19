@@ -12,5 +12,5 @@ use app\common\model\BaseModel;
 
 class Menu extends BaseModel
 {
-
+    protected $table = 'backend_menus';
 }

@@ -9,7 +9,7 @@
 namespace app\backend\logic;
 
 
-class AccountLogic extends BaseAdminLogic
+class PermissionLogic extends BaseAdminLogic
 {
 
 }
