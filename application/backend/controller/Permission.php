@@ -11,7 +11,7 @@ namespace app\backend\controller;
 
 use think\Request;
 
-class Permission extends BaseAdmin
+class Permission extends Basepermission
 {
     protected $permissionLogic;
     protected $permissionValidate;
@@ -28,7 +28,7 @@ class Permission extends BaseAdmin
     public function permissionList()
     {
         $params = $this->request->param();
-        $this->paramsValidate($this->adminValidate, 'list', $params);
+        $this->paramsValidate($this->permissionValidate, 'list', $params);
     }
 
     /**
@@ -37,7 +37,7 @@ class Permission extends BaseAdmin
     public function permissionDetail()
     {
         $params = $this->request->param();
-        $this->paramsValidate($this->adminValidate, 'detail', $params);
+        $this->paramsValidate($this->permissionValidate, 'detail', $params);
     }
 
     /**
@@ -46,7 +46,7 @@ class Permission extends BaseAdmin
     public function permissionAdd()
     {
         $params = $this->request->param();
-        $this->paramsValidate($this->adminValidate, 'add', $params);
+        $this->paramsValidate($this->permissionValidate, 'add', $params);
     }
 
     /**
@@ -55,7 +55,7 @@ class Permission extends BaseAdmin
     public function permissionEdit()
     {
         $params = $this->request->param();
-        $this->paramsValidate($this->adminValidate, 'edit', $params);
+        $this->paramsValidate($this->permissionValidate, 'edit', $params);
     }
 
     /**
@@ -64,7 +64,7 @@ class Permission extends BaseAdmin
     public function permissionDelete()
     {
         $params = $this->request->param();
-        $this->paramsValidate($this->adminValidate, 'delete', $params);
+        $this->paramsValidate($this->permissionValidate, 'delete', $params);
     }
 
 }
