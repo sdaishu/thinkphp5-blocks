@@ -12,6 +12,7 @@ api文档生成
 npm install apidoc -g  
 apidoc -i application/backend/controller/ -o public/docs/backend   
 apidoc -i application/api/controller/ -o public/docs/api  
+./vendor/bin/swagger ./application/api/controller/ -o public/swagger-docs/V1/swagger.json 
 
 ##目录结构模块说明
 application  

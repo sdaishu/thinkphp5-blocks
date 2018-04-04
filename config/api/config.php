@@ -7,15 +7,4 @@
  */
 
 
-return [
-
-    'nick_prefix'        =>      'miyin',
-    'thistime'           =>      date('Y-m-d H:i:s'),
-    'auth'               =>      [
-                                      'login',
-                                      'third-login',
-                                      'code-send',
-                                      'notoken',
-                                 ],
-
-];
+return [];
